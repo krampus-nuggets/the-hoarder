@@ -4,11 +4,11 @@ import "./styles/styles.css";
 
 const TopNav = () => {
   return(
-    <div id="TopNav" className="bg-dark text-white">
+    <div id="TopNav"className="bg-dark text-white">
       <Container className="container-fluid text-monospace">
         <Form>
-          <Row className="d-flex flex-row">
-            <Col className="mt-3 mr-3 ml-5">
+          <Row className="justify-content-center">
+            <Col className="mt-3 col-md-auto col-12 col-sm-4">
               <Form.Group controlId="topnav-form-manufacturer">
                 <Form.Label className="font-weight-bold">Manufacturer</Form.Label>
                 <Form.Control as="select">
@@ -19,7 +19,7 @@ const TopNav = () => {
                 </Form.Control>
               </Form.Group>
             </Col>
-            <Col className="mt-3 mr-3">
+            <Col className="mt-3 col-md-auto col-12 col-sm-4">
               <Form.Group controlId="topnav-form-price">
                 <Form.Label className="font-weight-bold">Price Range</Form.Label>
                 <Form.Control as="select">
@@ -29,7 +29,7 @@ const TopNav = () => {
                 </Form.Control>
               </Form.Group>
             </Col>
-            <Col className="mt-3 mr-3">
+            <Col className="mt-3 col-md-auto col-12 col-sm-4">
               <Form.Group controlId="topnav-form-province">
                 <Form.Label className="font-weight-bold">Province</Form.Label>
                 <Form.Control as="select">
@@ -39,7 +39,7 @@ const TopNav = () => {
                 </Form.Control>
               </Form.Group>
             </Col>
-            <Col className="mt-5">
+            <Col className="text-center pt-5 col-md-auto col-12 col-sm-4 mb-3">
               <Button className="font-weight-bold" variant="primary" type="submit">
                 Submit
               </Button>
