@@ -7,6 +7,16 @@ const TopNav = () => {
   const [priceRange, setPriceRange] = useState("");
   const [province, setProvince] = useState("");
 
+  const handleSubmit = async () => {
+    if (manufacturer === "" || priceRange === "" || province === "") {
+      alert("Choose an option you doos -_-");
+    } else if (manufacturer === "Choose..." || priceRange === "Choose..." || province === "Choose...") {
+      alert("You think you're funny -_-")
+    } else {
+      alert(`Manufacturer: ${ manufacturer } \n Price Range: ${ priceRange } \n Province: ${ province }`)
+    }
+  }
+
   return(
     <div id="TopNav"className="bg-dark text-white">
       <Container className="container-fluid text-monospace">
