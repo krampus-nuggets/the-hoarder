@@ -32,31 +32,38 @@ const TopNav = () => {
             <Col className="mt-3 col-md-auto col-12 col-sm-4">
               <Form.Group controlId="topnav-form-manufacturer">
                 <Form.Label className="font-weight-bold">Manufacturer</Form.Label>
-                <Form.Control as="select">
-                  <option>Audi</option>
-                  <option>BMW</option>
-                  <option>Chevrolet</option>
-                  <option>Ford</option>
+                <Form.Control as="select" value={ manufacturer } onChange={ e => setManufacturer( e.target.value ) }>
+                  <option>Choose...</option>
+                  <option value="audi">Audi</option>
+                  <option value="bmw">BMW</option>
+                  <option value="chevrolet">Chevrolet</option>
+                  <option value="ford">Ford</option>
                 </Form.Control>
               </Form.Group>
             </Col>
             <Col className="mt-3 col-md-auto col-12 col-sm-4">
               <Form.Group controlId="topnav-form-price">
                 <Form.Label className="font-weight-bold">Price Range</Form.Label>
-                <Form.Control as="select">
-                  <option>50k to 100k</option>
-                  <option>100k to 200k</option>
-                  <option>200k to 500k</option>
+                <Form.Control
+                  as="select"
+                  value={ priceRange }
+                  onChange={ e => setPriceRange( e.target.value ) }
+                >
+                  <option>Choose...</option>
+                  <option value="price=50001-to-100000">50k to 100k</option>
+                  <option value="price=100001-to-200000">100k to 200k</option>
+                  <option value="price=200001-to-500000">200k to 500k</option>
                 </Form.Control>
               </Form.Group>
             </Col>
             <Col className="mt-3 col-md-auto col-12 col-sm-4">
               <Form.Group controlId="topnav-form-province">
                 <Form.Label className="font-weight-bold">Province</Form.Label>
-                <Form.Control as="select">
-                  <option>Gauteng</option>
-                  <option>KwaZulu Natal</option>
-                  <option>Western Cape</option>
+                <Form.Control as="select" value={ province } onChange={ e => setProvince( e.target.value ) }>
+                  <option>Choose...</option>
+                  <option value="gauteng">Gauteng</option>
+                  <option value="kwazulu-natal">KwaZulu Natal</option>
+                  <option value="western-cape">Western Cape</option>
                 </Form.Control>
               </Form.Group>
             </Col>
