@@ -20,7 +20,14 @@ const TopNav = () => {
   return(
     <div id="TopNav"className="bg-dark text-white">
       <Container className="container-fluid text-monospace">
-        <Form>
+        <Form
+          onSubmit={
+            async e => {
+              e.preventDefault();
+              handleSubmit();
+            }
+          }
+        >
           <Row className="justify-content-center">
             <Col className="mt-3 col-md-auto col-12 col-sm-4">
               <Form.Group controlId="topnav-form-manufacturer">
