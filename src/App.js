@@ -3,6 +3,10 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./styles/styles.css";
 
 const TopNav = () => {
+  const [manufacturer, setManufacturer] = useState("");
+  const [priceRange, setPriceRange] = useState("");
+  const [province, setProvince] = useState("");
+
   return(
     <div id="TopNav"className="bg-dark text-white">
       <Container className="container-fluid text-monospace">
